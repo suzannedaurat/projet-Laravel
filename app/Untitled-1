@@ -1,0 +1,16 @@
+    <h1>Ajoutez une équipe</h1>
+
+    {!! Form::open(['action' => 'AddteamController@store']) !!}
+    {!! Form::label('name', 'name')!!}
+    {!! Form::text ('name')!!}
+    {!! Form::label('country', 'country')!!}
+    {!! Form::text ('country')!!}
+    {!! Form::label('rank', 'rank')!!}
+    {!! Form::number('rank')!!}
+    {!! Form::label('flag', 'flag')!!}
+    {!! Form::file ('flag')!!}
+  
+
+    {!! Form::submit('Submit')!!}
+
+    {!! Form::close() !!} <br>
